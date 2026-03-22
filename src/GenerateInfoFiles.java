@@ -23,7 +23,7 @@ public class GenerateInfoFiles {
     }
 
     public static void createProductsFile(int productsCount) {
-        try (PrintWriter writer = new PrintWriter("productos.txt")) {
+        try (PrintWriter writer = new PrintWriter("productos.csv")) {
 
             for (int i = 1; i <= productsCount; i++) {
                 String nombre = "Producto" + i;
@@ -38,7 +38,7 @@ public class GenerateInfoFiles {
     }
 
     public static void createSalesManInfoFile(int salesmanCount) {
-        try (PrintWriter writer = new PrintWriter("vendedores.txt")) {
+        try (PrintWriter writer = new PrintWriter("vendedores.csv")) {
 
             for (int i = 0; i < salesmanCount; i++) {
                 String tipoDoc = "CC";
@@ -57,7 +57,7 @@ public class GenerateInfoFiles {
     public static void createSalesMenFile(int randomSalesCount, String name, long id) {
 
         Random rand = new Random();
-        String fileName = "ventas_" + id + ".txt";
+        String fileName = "ventas_" + id + ".csv";
 
         try (PrintWriter writer = new PrintWriter(fileName)) {
 
