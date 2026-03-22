@@ -5,10 +5,18 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
- * Clase para cargar datos desde archivos.
+ * Clase utilitaria para lectura de archivos del sistema.
  */
 public class LecturaDatos {
 
+    /**
+     * Carga datos desde un archivo y los convierte en objetos.
+     *
+     * @param archivo ruta del archivo
+     * @param constructor función que convierte línea en objeto
+     * @param getKey función que obtiene la clave del objeto
+     * @return mapa con los datos cargados
+     */
     public static <T> Map<String, T> cargarDatos(
             String archivo,
             Function<String, T> constructor,
@@ -21,12 +29,19 @@ public class LecturaDatos {
     }
 
     /**
-     * Obtiene todos los archivos de ventas generados.
+     * Obtiene todos los archivos de ventas.
+     * Funciona si están en raíz o en carpeta "ventas".
      */
     public static List<Path> obtenerArchivosVentas() throws IOException {
 
-        return Files.walk(Paths.get("."))
-                .filter(path -> path.getFileName().toString().startsWith("ventas_"))
+        Path ruta = Files.exists(Paths.get("ventas"))
+                ? Paths.get("ventas")
+                : Paths.get(".");
+
+        return Files.walk(ruta)
+                .filter(Files::isRegularFile)
+                .filter(p -> p.getFileName().toString().startsWith("ventas_")
+                        && p.getFileName().toString().endsWith(".csv"))
                 .toList();
     }
 }
