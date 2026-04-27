@@ -1,0 +1,24 @@
+CONCLUSION DEL PROYECTO
+
+1. Lo aprendido durante el desarrollo del proyecto:
+
+Durante el desarrollo de este proyecto se adquirieron conocimientos fundamentales en programación en Java, especialmente en el manejo de archivos planos (CSV), lectura y escritura de datos, y procesamiento de información. Se comprendió cómo transformar datos sin procesar en información útil mediante el uso de estructuras como listas y mapas.
+
+También se fortalecieron habilidades en lógica de programación, organización del código en clases (como Producto y Vendedor) y desarrollo de programas que generan reportes automáticos a partir de datos.
+
+Adicionalmente, se aprendió el uso de GitHub como herramienta de control de versiones, permitiendo trabajar en equipo, gestionar cambios y mantener un respaldo del proyecto.
+
+2. Posibles aplicaciones en la vida profesional:
+
+Las habilidades adquiridas en este proyecto tienen aplicación directa en el ámbito laboral, especialmente en el desarrollo de software y el análisis de datos. Este tipo de soluciones permite automatizar procesos, generar reportes de ventas, analizar información empresarial y mejorar la toma de decisiones.
+
+Además, el manejo de archivos y procesamiento de datos es útil en áreas como administración, ingeniería y sistemas, donde se requiere organizar y analizar grandes volúmenes de información.
+
+3. Dificultades presentadas durante el desarrollo del proyecto:
+
+Durante el desarrollo del proyecto se presentaron dificultades relacionadas con la comprensión del manejo de archivos, la integración de las diferentes partes del sistema y el uso de herramientas como GitHub.
+
+También se evidenciaron retos en el trabajo en equipo, especialmente al coordinar tareas entre integrantes con diferentes niveles de conocimiento en programación. Sin embargo, estas dificultades fueron superadas mediante la práctica, el apoyo entre compañeros y la investigación.
+
+En general, el proyecto permitió consolidar conocimientos técnicos y desarrollar habilidades importantes para el trabajo en equipo y la resolución de problemas.
+
